@@ -1,10 +1,8 @@
 sudo apt update
 sudo apt upgrade
-sudo apt install hyprland
-sudo apt install waybar
-sudo apt install hyprpaper
+sudo apt install hyprland waybar hyprpaper
 sudo apt install git -y
-git clone https://github.com ~/tmp_jsos
+git clone https://github.com/Jakobf-1/JsOS-Ubuntu- ~/tmp_jsos
 cp -r ~/tmp_jsos/* ~/.config/
 sudo systemctl disable gdm3
 cat > ~/.bash_profile <<'EOF'
