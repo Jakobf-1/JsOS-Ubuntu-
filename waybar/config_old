@@ -1,0 +1,44 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "modules-left": [],
+    "modules-center": ["clock", "wlr/taskbar"],
+    "modules-right": ["pulseaudio", "network", "custom/power"],
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 25,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    },
+    "clock": {
+        "format": "{:%H:%M %d/%m/%Y}"
+    },
+    "network": {
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-disconnected": "Disconnected ",
+        "on-click": "kitty -e nmtui" 
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "wlogout --protocol layer-shell"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "🔇 Muted",
+        "on-click": "pavucontrol",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "🎧",
+            "hands-free": "🎧",
+            "headset": "🎧",
+            "phone": "📞",
+            "portable": "📁",
+            "car": "🚗",
+            "default": ["🔈", "🔉", "🔊"]
+        }
+    }
+}
