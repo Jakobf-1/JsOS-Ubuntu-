@@ -1,6 +1,6 @@
 sudo apt update
 sudo apt upgrade
-sudo apt install hyprland waybar hyprpaper
+sudo apt install hyprland waybar hyprpaper kitty dolphin firefox
 sudo apt install git -y
 git clone https://github.com/Jakobf-1/JsOS-Ubuntu- ~/tmp_jsos
 cp -r ~/tmp_jsos/* ~/.config/
