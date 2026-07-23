@@ -43,7 +43,7 @@ if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
 fi
 EOF
 
-chmod -x /etc/update-motd.d/*
+sudo chmod -x /etc/update-motd.d/*
 cat > /dog.scr <<'EOF'
       JJJJJJ    SSSSSS    OOOOOO    SSSSSS
         JJ     SS    SS  OO    OO  SS    SS
