@@ -53,6 +53,8 @@ cat > /dog.scr <<'EOF'
    JJJJJJ      SSSSSS     OOOOOO    SSSSSS
 EOF
 
+echo "cat /dog.scr" >> ~/.bashrc
+
 echo "Finished installing JsOS! Restarting in 3 seconds!"
 sleep 3
 reboot
