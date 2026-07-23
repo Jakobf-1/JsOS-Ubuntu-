@@ -8,6 +8,8 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 flatpak install flathub org.mozilla.firefox
 flatpak install flathub com.spotify.Client
+flatpak install flathub org.prismlauncher.PrismLauncher
+sudo apt install steam
 
 sudo apt install curl
 
