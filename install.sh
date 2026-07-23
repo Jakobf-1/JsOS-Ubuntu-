@@ -43,6 +43,7 @@ if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
 fi
 EOF
 
+chmod -x /etc/update-motd.d/*
 cat > /dog.scr <<'EOF'
       JJJJJJ    SSSSSS    OOOOOO    SSSSSS
         JJ     SS    SS  OO    OO  SS    SS
@@ -52,7 +53,6 @@ cat > /dog.scr <<'EOF'
   JJ    JJ    SS    SS   OO    OO  SS    SS
    JJJJJJ      SSSSSS     OOOOOO    SSSSSS
 EOF
-
 echo "cat /dog.scr" >> ~/.bashrc
 
 echo "Finished installing JsOS! Restarting in 3 seconds!"
