@@ -2,6 +2,13 @@ sudo apt update
 
 sudo apt upgrade
 
+sudo apt install flatpak
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+flatpak install flathub org.mozilla.firefox
+flatpak install flathub com.spotify.Client
+
 sudo apt install curl
 
 echo -n "Would you like to install ollama with SmolLM2? [y/n]: "
