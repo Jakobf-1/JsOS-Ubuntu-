@@ -24,7 +24,7 @@ else
     echo "Skipped Ollama install."
 fi
 
-hyprland waybar hyprpaper kitty dolphin firefox
+sudo apt install hyprland waybar hyprpaper kitty dolphin firefox
 
 sudo apt install git -y
 
